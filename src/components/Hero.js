@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" style={{ padding: '4rem 0', textAlign: 'center' }}>
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">

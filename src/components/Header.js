@@ -13,13 +13,13 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header style={{ padding: '1rem', background: '#eee' }}>
       <div className="container">
         <div className="nav-brand">
         </div>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-          <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
-          <a href="#portfolio" onClick={() => scrollToSection('portfolio')}>Portfolio</a>
+          <a href="#home" onClick={() => scrollToSection('home')} style={{ marginRight: 20 }}>Home</a>
+          <a href="#portfolio" onClick={() => scrollToSection('portfolio')} style={{ marginRight: 20 }}>Portfolio</a>
           <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
         </nav>
         <div className="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
